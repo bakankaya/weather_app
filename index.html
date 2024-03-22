@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="weather-thingy">
+        <div class="date">
+          <span></span>
+        </div>
+        <div class="weather-main">
+            <img  class="image info" src="" alt="" />
+            <span class="cityName"></span>
+            <span class="description info"></span>
+            <span class="temp info"></span>
+        </div>
+        <div class="weather-details">
+          <div class="feeling-part">
+            <p>Feels</p>
+            <p class="feeling info"></p>
+          </div>
+          <div class="wind">
+            <p>Wind</p>
+            <p class="speed info"></p>
+          </div>
+          <div class="humidity-part">
+            <p>Humidity</p>
+            <p class="humidity info"></p>
+          </div>
+        </div>
+          <div class="time">
+            <p>sunrise:</p>
+            <p class="sunrise info"></p>
+            <p>sunset:</p>
+            <p class="sunset info"></p>
+          </div>
+        <div class="location">
+          <input type="text" placeholder="Enter city" value="Ankara" />
+          <button onClick="window.location.reload()">Search</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
