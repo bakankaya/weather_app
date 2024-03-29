@@ -17,7 +17,7 @@ document.querySelector(".date span").textContent = date.toLocaleDateString('en-E
 /* Default City */
 const cityQuery = document.querySelector(".location input");
 const city = cityQuery.value;
-const APIKEY = "";
+const APIKEY = "a127619b02228ad2ee53bda273b6dabb";
 const BASE_URL = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`;
 
 fetch(BASE_URL)

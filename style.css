@@ -4,15 +4,19 @@
     border: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: digital-7 ;
+    src: url(./digital-7.ttf);
+}
 .weather-thingy {
     width: 450px;
     padding: 18px 12px;
     overflow: hidden;
     border-radius: 12px;
-    background: black;
+    background: #2a4e6e;
 }
 
 .date {
@@ -20,7 +24,7 @@
     text-align: center;
     font-weight: 600;
     font-size: large;
-    color: lightgray;
+    color: #bdc2c6;
 }
 
 .weather-main {
@@ -28,10 +32,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 12px;
-    background: lightgrey;
+    background: #7e91a2;
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    border: 3px groove #041f37;
 }
 .weather-main img {
     margin: auto;
@@ -41,6 +46,7 @@
     font-weight: 600;
     font-size: xx-large;
 }
+
 .description {
     font-weight: 300;
     font-style: italic;
@@ -51,14 +57,14 @@
     padding: 20px 32px;
     border-radius: 12px;
     border: 2px double;
-    background: lightgrey;
+    background: #7e91a2;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-around;
 }
 .time {
-    background: lightgrey;
+    background: #7e91a2;
     margin-top: 6px;
     border-radius: 12px;
     display: grid;
@@ -81,4 +87,7 @@
     border-radius: 6px;
     padding: 2px;
     width: 15%;
+}
+.info:not(.description) {
+    font-family: digital-7;
 }
