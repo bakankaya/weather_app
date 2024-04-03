@@ -20,26 +20,32 @@
             <span class="description info"></span>
             <span class="temp info"></span>
         </div>
-        <div class="weather-details">
-          <div class="feeling-part">
-            <p>Feels</p>
-            <p class="feeling info"></p>
+        <div class="weather-secondary">
+          <div class="weather-details">
+            <div class="feeling-part weather-details-2">
+              <p>Feels</p>
+              <p class="feeling info"></p>
+            </div>
+            <div class="wind weather-details-2">
+              <p>Wind</p>
+              <p class="speed info"></p>
+            </div>
+            <div class="humidity-part weather-details-2">
+              <p>Humidity</p>
+              <p class="humidity info"></p>
+            </div>
           </div>
-          <div class="wind">
-            <p>Wind</p>
-            <p class="speed info"></p>
-          </div>
-          <div class="humidity-part">
-            <p>Humidity</p>
-            <p class="humidity info"></p>
-          </div>
+            <div class="time">
+              <div class="time-2">
+                <p>Sunrise:</p>
+                <p class="sunrise info"></p>
+              </div>
+              <div class="time-2">
+                <p>Sunset:</p>
+                <p class="sunset info"></p>
+              </div>
+            </div>
         </div>
-          <div class="time">
-            <p>sunrise:</p>
-            <p class="sunrise info"></p>
-            <p>sunset:</p>
-            <p class="sunset info"></p>
-          </div>
         <div class="location">
           <input type="text" placeholder="Enter city" value="Ankara" />
           <button onClick="window.location.reload()">Search</button>
