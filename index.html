@@ -3,48 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="./icons8-clouds-16.png">
     <link rel="stylesheet" href="style.css">
 
     <title>Weather App</title>
 </head>
 
 <body>
-    <div class="weather-thingy">
-        <div class="date">
-          <span></span>
-        </div>
-        <div class="weather-main">
-            <img  class="image info" src="" alt="" />
+    <div class="weather-app">
+        <div class="weather-info">
+          <div class="date">
+            <span></span>
             <span class="cityName"></span>
-            <span class="description info"></span>
-            <span class="temp info"></span>
-        </div>
-        <div class="weather-secondary">
-          <div class="weather-details">
-            <div class="feeling-part weather-details-2">
-              <p>Feels</p>
-              <p class="feeling info"></p>
-            </div>
-            <div class="wind weather-details-2">
-              <p>Wind</p>
-              <p class="speed info"></p>
-            </div>
-            <div class="humidity-part weather-details-2">
-              <p>Humidity</p>
-              <p class="humidity info"></p>
-            </div>
           </div>
+          <div class="weather-main">
+            <div class="info-box">
+              <img  class="image info" src="" alt="" />
+              <span class="description info"></span>
+            </div>
+            <span class="temp info"></span>
+          </div>
+          <div class="weather-secondary">
+            <div class="weather-details">
+              <div class="feeling-part info-box">
+                <p>Feels</p>
+                <p class="feeling info"></p>
+              </div>
+              <div class="wind info-box">
+                <p>Wind</p>
+                <p class="speed info"></p>
+              </div>
+              <div class="humidity-part info-box">
+                <p>Humidity</p>
+                <p class="humidity info"></p>
+              </div>
+            </div>
             <div class="time">
-              <div class="time-2">
+              <div class="time-box">
                 <p>Sunrise:</p>
                 <p class="sunrise info"></p>
               </div>
-              <div class="time-2">
+              <div class="time-box">
                 <p>Sunset:</p>
                 <p class="sunset info"></p>
               </div>
             </div>
+          </div>
         </div>
         <div class="location">
           <input type="text" placeholder="Enter city" value="Ankara" />

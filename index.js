@@ -17,7 +17,7 @@ document.querySelector(".date span").textContent = date.toLocaleDateString('en-E
 /* Default City */
 const cityQuery = document.querySelector(".location input");
 const city = cityQuery.value;
-const APIKEY = " ";
+const APIKEY = "a127619b02228ad2ee53bda273b6dabb";
 const BASE_URL = ` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}&units=metric`;
 
 fetch(BASE_URL)
@@ -27,10 +27,10 @@ fetch(BASE_URL)
         document.querySelector(".image").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
         document.querySelector(".cityName").textContent = data.name;
         document.querySelector(".description").textContent = data.weather[0].description;
-        document.querySelector(".temp").textContent = `${Math.round(data.main.temp)}°C `;
+        document.querySelector(".temp").textContent = `${Math.round(data.main.temp)} °C `;
         document.querySelector(".speed").textContent = `${data.wind.speed} m/s`;
         document.querySelector(".humidity").textContent = `${data.main["humidity"]} %`;
-        document.querySelector(".feeling").textContent = `${Math.round(data.main.feels_like)}°C`;
+        document.querySelector(".feeling").textContent = `${Math.round(data.main.feels_like)} 'C`;
         document.querySelector(".sunrise").textContent = new Date(data.sys.sunrise * 1000).toLocaleTimeString("tr-TR",optionsTime);
         document.querySelector(".sunset").textContent = new Date(data.sys.sunset * 1000).toLocaleTimeString("tr-TR",optionsTime);
 //cityQuery.value = " ";
