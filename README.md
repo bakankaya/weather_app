@@ -2,11 +2,11 @@
 
 ![weather_app_Screenshot](./src/weather_app.png)
 
-Simple weather app made with JavaScript to show the weather conditions in the desired location.
+Simple weather app made with JavaScript to show the weather conditions from the browser location or in the desired location.
 
 The design is inspired from old digital watches *like Casio FW-91W*.
 
-There is also react component version of it, which can be found at [weather_component](https://github.com/bakankaya/weather_component).
+There is also React component version of it, which can be found at my other repo [weather_component](https://github.com/bakankaya/weather_component).
 
 To use you need to get your own API keys from listed services (*for free*).
 
