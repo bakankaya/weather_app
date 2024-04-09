@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./icons8-clouds-16.png">
+
+    <link rel="icon" href="./src/icons8-clouds-16.png">
     <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="index.js"></script>
 
     <title>Weather App</title>
 </head>
@@ -51,10 +54,9 @@
           </div>
         </div>
         <div class="location">
-          <input type="text" placeholder="Enter city" value="Ankara" />
-          <button onClick="window.location.reload()">Search</button>
+          <input id="input" type="text" placeholder="Enter city"/>
+          <button id="search">Search</button>
         </div>
     </div>
-    <script type="module" src="index.js"></script>
 </body>
 </html>
