@@ -1,9 +1,6 @@
 import convertToASCII from "./src/convertToASCII.js";
+import { weatherAPI, locationAPI } from "./src/APIkeys.js";
 
-/* API KEYS */
-
-const weatherAPI = "a127619b02228ad2ee53bda273b6dabb";
-const locationAPI = "f0c7b41abdd74f61b131f00066c10382";
 
 /* Creating Date Format */
 
