@@ -2,8 +2,8 @@ import convertToASCII from "./src/convertToASCII.js";
 
 /* API KEYS */
 
-const weatherAPI = "";
-const locationAPI = "";
+const weatherAPI = "a127619b02228ad2ee53bda273b6dabb";
+const locationAPI = "f0c7b41abdd74f61b131f00066c10382";
 
 /* Creating Date Format */
 
@@ -68,8 +68,12 @@ function getWeather(cityName) {
 const btn = document.getElementById('search');
 btn.addEventListener('click', searchWeather)
   function searchWeather(){
-    getWeather(document.getElementById("input").value);
-    document.getElementById("input").value = "";
+    if(document.getElementById("input").value == ""){
+        return;
+    } else{
+      getWeather(document.getElementById("input").value);
+      document.getElementById("input").value = "";
+    }
   };
 
 const bar = document.getElementById("input");
